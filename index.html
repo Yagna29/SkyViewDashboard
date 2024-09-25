@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Weather Dashboard with API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter City Here" class="search-input">
+                <button class="fa-solid fa-magnifying-glass" id="search-btn"></button>
+            </div>
+        </div>
+        <div class="location-not-found">
+            <h3>Location not found</h3>
+            <img src="404.png" alt="" class="not-found-img">
+        </div>
+        <div class="weather-body">
+            <img src="" alt="" class="image">
+            <div class="weather-box">
+                <div class="temp">
+                    <span>86 <sup>℃</sup></span>
+                </div>
+                <div class="text">
+                    <p class="desc">Clouds and sun</p>
+                </div>
+                <div class="time-date">
+                    <p class="time">11:02</p>
+                    <p class="date">Tue Dec 22, 2024</p>
+                </div>
+            </div>
+            <div class="weather-details">
+                <div class="realfeel">
+                    <div class="realfeel-icon">
+                        <i class="fa-solid fa-temperature-half"></i>
+                    </div>
+                    <div class="text">
+                        <p>Feels Like</p>
+                        <p id="feels_like">98℃</p>
+                    </div>
+                </div>
+
+                <div class="humidity">
+                    <div class="humidity-icon">
+                        <i class="fa-solid fa-droplet"></i>
+                    </div>
+                    <div class="text">
+                        <p>Humidity</p>
+                        <p id="humid">69%</p>
+                    </div>
+                </div>
+
+                <div class="sunrise">
+                    <div class="sunrise-icon">
+                        <i class="fa-solid fa-sun"></i>
+                    </div>
+                    <div class="text">
+                        <p>Sunrise</p>
+                        <p class="sunrise-time">06:17</p>
+                    </div>
+                </div>
+
+                <div class="sunset">
+                    <div class="sunset-icon">
+                        <i class="fa-regular fa-sun"></i>
+                    </div>
+                    <div class="text">
+                        <p>Sunset</p>
+                        <p class="sunset-time">17:33</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
